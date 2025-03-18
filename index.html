@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>88-120 Project Survey</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>88-120 Project Survey</h1>
+    <button onclick="openRandomLink()">Take the Survey</button>
+
+    <script>
+        function openRandomLink() {
+            const links = [
+                "https://qualtricsxmg3lyh2dq8.qualtrics.com/jfe/form/SV_bO3Pek8LBvyifIy",
+                "https://qualtricsxmg3lyh2dq8.qualtrics.com/jfe/form/SV_eqVYaXnOug9YB70",
+                "https://qualtricsxmg3lyh2dq8.qualtrics.com/jfe/form/SV_5pPTfKvuNxACegK",
+                "https://qualtricsxmg3lyh2dq8.qualtrics.com/jfe/form/SV_9zbLgrl7RAzGWea"
+            ];
+            
+            const randomIndex = Math.floor(Math.random() * links.length);
+            window.open(links[randomIndex], "_blank");
+        }
+    </script>
+</body>
+</html>
